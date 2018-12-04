@@ -6,11 +6,87 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"> </script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" rel="stylesheet"/>
   <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+  <style>
+a
+{
+  color: #d33682;
+  font-weight: bold
+}
+
+h1
+{
+  color: #586e75;
+  font-family: 'EB Garamond', serif;
+  font-variant: small-caps;
+}
+
+h3
+{
+  color: #586e75;
+  font-family: 'EB Garamond', serif;
+  padding-bottom: 15px;
+}
+
+h3 span
+{
+  font-variant: small-caps;
+}
+
+h3 i
+{
+  padding-right: 12px;
+}
+
+p
+{
+  font-family: 'EB Garamond', serif;
+  font-size: 15pt;
+  line-height: 1.4;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.divider-thin-thick
+{
+  text-align:center;
+  width:90%;
+  max-width:700px;
+  margin:15px auto 35px auto;
+  border-top:1px solid #EEEEEE;
+  border-bottom:2px solid #EEEEEE;
+  height:5px;
+  clear:both
+}
+
+.mytext
+{
+  display: inline-block;
+  max-width: 700px;
+  text-align: left;
+  font-family: 'EB Garamond', serif;
+}
+
+.myimg
+{
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  font-family: 'EB Garamond', serif;
+}
+
+  </style>
+
  </head>
  <body>
   <nav class="navbar navbar-default navbar-darkbg-dark navbar-fixed-top">
    <div class="container">
     <div class="navbar-header">
+     <!-- PUT YOUR SHORT TITLE HERE (should match other pages) -->
      <a class="navbar-brand" href="index.html">Dogs</a>
     </div>
     <div class="navbar-collapse collapse" id="navbar">
@@ -32,30 +108,150 @@
     </div>
    </div>
   </nav>
-  <div class="container" style="padding-top: 30px;">
-   <div class="row">
-    <div class="col-lg-4">
-     <img src="lilly.jpg" style="max-width: 300px"/>
-     <img src="frosty.jpg" style="max-width: 300px"/>
-    </div>
-    <div class="col-lg-8" style="font-size: 16px; max-width:600px">
-     <h1>The 50 Most Popular Dog Breeds Worldwide</h1>
-     <p>These pages look at the characteristics of the Wikipedia
-     pages for the top 50 dog breeds worldwide.
-     The ranking of the most popular dog breeds was taken from a combination
-     of the 2013 list of most popular dog breeds on the
-     <a href="https://en.wikipedia.org/wiki/List_of_most_popular_dog_breeds"> Wikipedia page </a>
-     listing the most popular dog breeds, which lists the most popular 30 breeds.
-     The remaining breeds came from
-     <a href="https://www.jenreviews.com/dog-breeds/"> this page </a>
- 	 listing the 50 most popular breeds worldwide.</p>
 
- 	 <p> Some of the characteristics explored in these pages include the page histories since
- 	 they were first created, the languages into which each page has been translated,
- 	 a measure of how often a given page is linked to by the other pages in the set,
- 	 and some description page length, included images, etc. </p>
+  <div style="text-align: center; background: #f1f1f1">
+  <div style="display: inline-block; padding-top: 90px; padding-bottom: 90px; background: white; width: 900px">
+
+    <!-- PUT YOUR LONG TITLE AND NAME HERE -->
+    <div style="max-width: 600px; display: inline-block;">
+      <h1>The Representation of Popular Dog Breeds on Wikipedia</h1>
+      <h3><i>by</i> <span>Rachel Culpepper</span></h3>
     </div>
-   </div>
+
+    <div class="divider-thin-thick">&nbsp;</div>
+
+
+    <div class="text">
+    	<h3> The Collection </h3>
+    	<p>The pages included in this project include the Wikipedia page for each of the fifty most popular dog breeds worldwide. To get the list of breeds, I started with the Wikipedia page for the <a href="https://en.wikipedia.org/wiki/List_of_most_popular_dog_breeds"> list of most popular dog breeds </a> [7] (using the list from 2013 on that page). I was concerned that thirty pages would be a little small of a dataset, so I found <a href="https://www.jenreviews.com/dog-breeds"> another page </a> [1] that listed the fifty most popular dog breeds worldwide and used that list for the latter twenty breeds whose pages are included in the dataset. I don’t know whether the data in these lists are from the same year (probably not), but I looked over the top thirty from the second list, and the rankings matched up without any issues. The pages are ordered based on the above ranking, from most popular to least popular. </p>
+    </div>
+
+    <div class="heading">
+    	<h2> Observations </h2>
+    </div>
+
+    <div>
+    	<h3> Page Creation Dates </h3>
+    	<p> I expected there to be a relationship between the popularity of a breed and the creation date of its page (with more popular breeds having pages that were created earlier, and less popular breeds having pages that were created later). Most of the pages were created between 2001-2005, and there’s no apparent relationship between a page’s creation year and the breed’s popularity. This may be related to the way the lists determine popularity. The Wikipedia article measured popularity by the number of dogs of each breed registered across twenty-five countries (the other website had a very similar list and likely similar methods, but did not specify them). It’s possible that the creation date of a page was more influenced by the breed’s prominence in popular culture (many breeds represented in popular media [<a href="https://nerdist.com/our-favorite-pop-culture-dog-for-every-breed/"> 8 </a>] have pages with earlier creation dates). The only outlier is the <a href="https://en.wikipedia.org/wiki/Miniature_American_Shepherd"> Miniature American Shepherd </a>, whose page was created in 2012. According to the history section of the page, the breed was registered with the American Kennel Club’s Foundation Stock Service [<a href="https://www.akc.org/dog-breeds/foundation-stock-service/"> 5 </a>] in 2011 and is not fully recognized by the AKC, which explains the page’s creation date. </p>
+    </div>
+
+        <div class="myimg">
+      <img src="frosty.jpg" style="max-width: 200px;"/>
+      <br>
+      Golden Retriever
+    </div>
+
+    <div>
+    	<h3> First Paragraph </h3>
+    	<p> For some pages, the first paragraph is very sparse (e.g., for <a href="https://en.wikipedia.org/wiki/Labrador_Retriever"> Labrador Retriever </a> it is just two sentences long and only includes the breed’s type and popularity). In contrast, the first paragraphs for other pages (such as <a href="https://en.wikipedia.org/wiki/German_shepherd"> German Shepherd </a> and <a href="https://en.wikipedia.org/wiki/Golden_retriever"> Golden Retriever </a>) are much longer. </p>
+    		<p> Many pages include the type of work the dogs were originally bred for (for example, Labrador Retriever and <a href="https://en.wikipedia.org/wiki/English_Cocker_Spaniel"> English Cocker Spaniel </a>); others include various other descriptions such as common physical traits (e.g., <a href="https://en.wikipedia.org/wiki/Shih_Tzu"> Shih Tzu </a> and <a href="https://en.wikipedia.org/wiki/Chihuahua_(dog)"> Chihuahua </a>), some history (e.g., <a href="https://en.wikipedia.org/wiki/Boxer_(dog)"> Boxer </a>), or notes on temperament (e.g., <a href="https://en.wikipedia.org/wiki/Miniature_schnauzer"> Miniature schnauzer </a>) of the breed. This variation may be explained by differences in common perceptions of each breed, which may influence the information that is emphasized in the introduction of the page. </p>
+    		<p> Some of the pages that have shorter first paragraphs include a lot more information in subsequent paragraphs in the introduction, but the information presented still varies a lot. Some of this variation may be due to the common perception of a particular breed; breeds like German Shepherd are commonly used as service dogs and police dogs [<a href="https://www.akc.org/expert-advice/lifestyle/service-therapy-working-dogs/"> 9</a>], and so it makes sense that their working traits and skills are prominent. Other breeds, such as the Bulldog, are more commonly seen as show dogs or pets, and so it makes sense for those qualities to be emphasized. </p>
+    		<p> Interestingly, the Chihuahua page stands out in having a very short first paragraph and no subsequent paragraphs in the introduction. The page is also unusually short compared to breeds ranked near it. Other pages of similar length tend to have longer first paragraphs, and pages with short first paragraphs tend to be longer (e.g., the <a href="https://en.wikipedia.org/wiki/Dachshund"> Dachshund </a> page has 205081 characters, compared to 91612 for Chihuahua). </p>
+    </div>
+
+    <div class="myimg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Chihuahua1_bvdb.jpg" style="max-width: 200px;"/>
+      <br>
+      Chihuahua (from its Wikipedia page)
+    </div>
+
+    <div>
+    	<h3> Page length for the German Spitz </h3>
+    	<p> The lengths of the pages vary a lot, between around 300 and 1400 words. The <a href="https://en.wikipedia.org/wiki/German_Spitz"> German Spitz </a> page is unusually short at 123 words (less than half that of the next shortest page). It may be that this page happens to use a lot of words that are excluded from the word count. A significant part of the text of the page is also in lists, while the word count is generated from the page’s paragraphs. </p>
+    </div>
+
+    <div class="myimg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Goldilocks.gif" style="max-width: 200px;"/>
+      <br>
+      German Spitz (from its Wikipedia page)
+    </div>
+
+    <div>
+    	<h3> Centrality </h3>
+    	<p> The pages for Siberian Husky and Shiba Inu have low centrality measures of 0. This is especially strange given that the page for Akita, a close relation of the Shiba Inu, has a centrality score of 0.01589.</p>
+    	<p> On the other hand, the page for Weimaraner has a very high centrality for its ranking at 0.24548. This may be due to the inclusion of many breeds of gun dogs (e.g., Labrador Retriever and German Shorthaired Pointer) and many German breeds in the collection. </p>
+    </div>
+
+    <div class="myimg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Weimaraner_wb.jpg" style="max-width: 200px;"/>
+      <br>
+      Weimaraner (from its Wikipedia page)
+    </div>
+
+    <div>
+    	<h3> Number of languages for the Miniature American Shepherd </h3>
+    	<p> Almost all pages have translations in German, Spanish, French, and Russian; most also include Korean and Mandarin Chinese. The Miniature American Shepherd is the only page that has versions in fewer than five languages (just English and German). This is likely because the breed arose recently in the US, so it is less well-known internationally and thus there is less interest in translating the page into other languages. </p>
+    </div>
+
+    <div class="myimg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Blue_Merle_Miniature_American_Shepherd_in_Grass.jpg/800px-Blue_Merle_Miniature_American_Shepherd_in_Grass.jpg" style="max-width: 200px;"/>
+      <br>
+      Miniature American Shepherd (from its Wikipedia page)
+    </div>
+
+    <div>
+    	<h3> Clusters </h3>
+    	<p> Most clusters group breeds that are either of the same type or that have a common geographic origin. The latter may explain why Chihuahua is in a cluster by itself, because it is the only breed in the collection from Mexico. </p>
+    	<p>The first cluster seemed to include two dissimilar breeds (<a href="https://en.wikipedia.org/wiki/Siberian_Husky"> Siberian Husky </a> and <a href="https://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi"> Pembroke Welsh Corgi </a>), but I found on their pages that both breeds descend from the <a href="https://en.wikipedia.org/wiki/Spitz"> Spitz family </a>, the same family as the cluster of <a href="https://en.wikipedia.org/wiki/German_Spitz"> German Spitz </a> and <a href="https://en.wikipedia.org/wiki/Pomeranian"> Pomeranian </a>. The Siberian Husky and Corgi are emphasized as working dogs, whereas the pages for German Spitz and Pomeranian emphasize their role as companion dogs, which may explain the separate clusters. This may also simply be a result of having fifty pages grouped into twenty clusters.</p>
+    	<p>The second cluster seemed similarly unusual at first, but all three included breeds actually have similar skull structures. Boxers and Pugs are common examples of dogs that are brachycephalic, meaning they have short muzzles [<a href="https://www.acvs.org/small-animal/brachycephalic-syndrome"> 3 </a>]. The Cavalier King Charles Spaniel suffers from these issues as well [<a href="https://www.ufaw.org.uk/dogs/cavalier-king-charles-spaniel-primary-secretory-otitis-media"> 6 </a>, <a href="http://cavalierhealth.org/brachycephalic.htm"> 2 </a>]. It is possible that this structure in the cluster is coincidental (the page for <a href="https://en.wikipedia.org/wiki/Cavalier_King_Charles_Spaniel"> Cavalier King Charles Spaniel </a> makes no explicit mention of brachycephaly), but it is an interesting connection between the pages. </p>
+    	<p> The last cluster consists of <a href="https://en.wikipedia.org/wiki/Shih_Tzu"> Shih Tzu </a>, <a href="https://en.wikipedia.org/wiki/Rhodesian_Ridgeback"> Rhodesian Ridgeback </a>, and <a href="https://en.wikipedia.org/wiki/Soft-coated_wheaten_terrier"> Soft-coated Wheaten Terrier </a>. There is no apparent commonality between these breeds: their pages indicate that they are all different types, from different continents, and bred for different purposes. It may be that these three had few similarities to other clusters, though it is still surprising that the Soft-coated Wheaten Terrier was not in the terrier cluster. </p>
+    </div>
+
+    <div class="myimg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/CarterBIS.Tiki.13.6.09.jpg" style="max-width: 200px;"/>
+      <br>
+      Cavalier King Charles Spaniel (from its Wikipedia page)
+    </div>
+
+    <div>
+    	<h3> Number of Images Over Time </h3>
+    	<p> Labrador Retriever and Soft-coated Wheaten Terrier (the most and least popular breeds in the collection) each represent extremes in the number of images and how that has changed over the life of each page. </p>
+
+    	<p> The Labrador Retriever’s page was created in 2001 and started with no images, but the number of images on the page grew steadily afterward (with a few minor drops) then saw a large spike between around 2013. Many other pages have a spike in this time frame, which may reflect a widespread trend of adding more images to Wikipedia pages around that time. </p>
+
+    	<p> The Soft-coated Wheaten Terrier’s page has far fewer images and showed much slower growth, only adding new images every few years early on and never having more than six images. Unlike many other pages, its number of images did not spike in 2013. </p>
+
+    	<p> While there appears to be a relationship between a breed’s popularity and the number of images on its page, there are also some breeds (like the St. Bernard) that have many images despite relatively low popularity. This may be influenced by the prominence of the breed in popular culture [<a href="https://www.smithsonianmag.com/travel/a-brief-history-of-the-st-bernard-rescue-dog-13787665/"> 4 </a>, <a href="https://screenrant.com/best-dog-movies/"> 10 </a>], since that would provide more images to include, especially of notable dogs from a particular breed (which the St. Bernard’s page includes). </p>
+    </div>
+
+    <div class="myimg">
+      <img src="lilly.jpg" style="max-width: 200px;"/>
+      <br>
+      A beautiful labrador retriever.
+    </div>
+
+    <div>
+    	<h3> Conclusions </h3>
+    	<p> The clusters produced for this collection were especially interesting. They were largely very logical, and even the ones that seemed random appeared to have some structure. </p>
+
+    	<p> A lot of the interesting observations seemed related to the distinction between the popularity of a breed and the cultural prominence of that breed. This effect was a possible explanation for several of the patterns among the collection. The way information is structured on the pages in general seems to reflect this: the introduction of a page prioritizes information that is culturally prominent for its topic. There also seems to be a relationship between the recency and popularity of a topic and the amount of information on its page (for example, the short length of the page for the German Spitz or the page for the Miniature American Shepherd). The languages into which each page is translated give an indication of how widespread interest in the topic is outside of the anglophone world (e.g., the small number of languages for the Miniature American Shepherd page). </p>
+    </div>
+
+    <div>
+    	<h3> References </h3>
+    	<p>[1] 50 most popular dog breeds in the world. https://www.jenreviews.com/dog-breeds/. Accessed: Nov 29, 2018. </p>
+		<p> [2] Brachycephapc airway obstruction syndrome (baos) in the cavaper king charles spaniel. http://cavaperhealth.org/brachycephapc.htm. Accessed: Dec 3, 2018. </p>
+		<p> [3] Brachycephapc syndrome. https://www.acvs.org/small-animal/brachycephapc-syndrome. Accessed: Dec 2, 2018. </p>
+		<p> [4] A brief history of the st. bernard rescue dog. https://www.smithsonianmag.com/travel/a-brief-history-of-the-st-bernard-rescue-dog-13787665/. Accessed: Dec 3, 2018.</p>
+		<p> [5] Foundation stock service. https://www.akc.org/dog-breeds/foundation-stock-service/. Accessed: Dec 4, 2018. </p>
+		<p> [6] Genetic welfare problems of companion animals: Cavaper king charles spaniel (ckcs). https://www.ufaw.org.uk/dogs/cavaper-king-charles-spaniel-primary-secretory-otitis-media. Accessed: Dec 2, 2018. </p>
+		<p> [7] List of most popular dog breeds. https://en.wikipedia.org/wiki/List_of_most_popular_dog_breeds. Accessed: Nov 29, 2018. </p>
+		<p> [8] Our favorite pop culture dogs for every breed. https://nerdist.com/our-favorite-pop-culture-dog-for-every-breed/. Accessed: Dec 3, 2018. </p>
+		<p> [9] Service, therapy, and working dogs. https://www.akc.org/expert-advice/pfestyle/service-therapy-working-dogs/. Accessed: Dec 3, 2018.</p>
+		<p> [10] The top 25 dog movies. https://screenrant.com/best-dog-movies/. Accessed: Dec 3, 2018. </p>
+    </div>
+
   </div>
+  </div>
+
+
+
  </body>
 </html>
+
+
+
+
+
+
+
